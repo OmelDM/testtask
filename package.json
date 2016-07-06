@@ -1,0 +1,15 @@
+{
+  "name": "jsintership",
+  "version": "1.0.0",
+  "description": "Test task for js intership",
+  "author": "Dmytro Omelchuk",
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^4.1.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^2.3.2"
+  }
+}
