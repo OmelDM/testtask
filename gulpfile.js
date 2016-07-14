@@ -3,6 +3,7 @@ var gulp = require('gulp')
 	, sass = require('gulp-sass')
 	, concat = require('gulp-concat')
 	, connect = require('gulp-connect')
+	, autoprefixer = require('gulp-autoprefixer')
 	, del = require('del');
 
 var BUILD_DIR = './build/'
@@ -32,6 +33,7 @@ gulp.task('stylesheets', function () {
 	return gulp.src(STYLESHEETS_PATH)
 		.pipe(concat('main.scss'))
 		.pipe(sass().on('error', sass.logError))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest(BUILD_DIR + 'css'))
 		.pipe(connect.reload());
 });

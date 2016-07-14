@@ -1,1 +1,136 @@
-.microsoft-content I'm a MICROSOFT
+.header
+	.header-wrapper.clearfix
+		.header-brand
+			a(href="http://microsoft.com", title="Microsoft"): img(src="https://assets.onestore.ms/cdnfiles/onestorerolling-1606-01000/shell/v3/images/logo/microsoft.png", alt="Microsoft")
+		
+		.header-nav-wrapper
+			ul.header-nav
+				li.dropdown-label.nav-login-container
+				li.dropdown(onclick="dropdownContent(this)")
+					.dropdown-label.arrow-down
+						a Магазин
+					.dropdown-content
+						dl.dropdown-tab
+							dt.dropdown-tab-label
+								a.dropdown-tab-link(href="#") Домашня сторінка Магазину
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Office
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Всі версії Office
+									li
+										a(href="#") Програмні комплекси Office
+									li
+										a(href="#") Усі програми Office
+									li
+										a(href="#") Office для вашого Mac
+									li
+										a(href="#") Office 365
+									li
+										a(href="#") Порівняння програмних комплексів Office
+									li
+										a(href="#") Мовні пакети Office
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Windows
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Windows 10 Home
+									li
+										a(href="#") Windows 10 Pro
+				li.dropdown(onclick="dropdownContent(this)")
+					.dropdown-label.arrow-down
+						a Продукти
+					.dropdown-content
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Програмне забезпечення та служби
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Windows
+									li
+										a(href="#") Office
+									li
+										a(href="#") Безкоштовні завантаження та безпека
+									li
+										a(href="#") Internet Explorer
+									li
+										a(href="#") Microsoft Edge
+									li
+										a(href="#") Skype
+									li
+										a(href="#") OneNote
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Пристрої та Xbox
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Комп’ютерні аксесуари
+									li
+										a(href="#") Microsoft Lumia
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Для бізнесу
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Microsoft Azure
+									li
+										a(href="#") Microsoft Dynamics
+									li
+										a(href="#") Windows для бізнесу
+									li
+										a(href="#") Office для бізнесу
+									li
+										a(href="#") Skype для бізнесу
+									li
+										a(href="#") Корпоративні рішення
+									li
+										a(href="#") Рішення для малого бізнесу
+									li
+										a(href="#") Знайти постачальника рішень
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Для IT-фахівців і розробників
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Розробка програм Windows
+									li
+										a(href="#") Microsoft Azure
+									li
+										a(href="#") MSDN
+									li
+										a(href="#") Visual Studio
+						dl.dropdown-tab(onclick="dropdownTabContent(this); event.stopPropagation();" onmouseover="dropdownTabContent(this, event);")
+							dt.dropdown-tab-label.arrow-down-right
+								a Освіта
+							dd.dropdown-tab-content
+								ul.dropdown-tab-list
+									li
+										a(href="#") Освіта
+				li.dropdown-label
+					a(href="#Support") Підтримка
+
+		.header-item.header-item_hover.header-item-login-container
+			a(href="#login").login Вхід
+		.header-item.header-item_hover.burger-menu(onclick="toogleNavigation(this);return false;")
+			i.fa.fa-bars
+		.header-item.header-item_hover.cart
+			a(href="#Cart")
+				i.fa.fa-shopping-cart
+				span 0
+		.header-item.header-item_hover.search(onclick="toogleSearchBox(this);return false;")
+			i.fa.fa-search
+		.header-item.header-item_no-hover.search-box
+			form.search-form(action="#")
+				input.search-input(type="search", title="Пошук на веб-сайті Microsoft.com", placeholder="Пошук на веб-сайті Microsoft.com", maxlength="200")
+				button.search-button
+					i.fa.fa-search
+
+
