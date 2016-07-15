@@ -1,8 +1,8 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 div, h2, p, form {
-	margin: 0;
+    margin: 0;
     padding: 0;
     border: 0;
     font: inherit;
@@ -10,8 +10,8 @@ div, h2, p, form {
     vertical-align: baseline;
 }
 .container {
-	position: relative;
-	    text-align: center;
+    position: relative;
+    text-align: center;
     padding: 160px 0 145px;
     background: #323a45;
     font-family: "Open Sans", "open-sans", sans-serif;
@@ -22,10 +22,11 @@ div, h2, p, form {
     margin-right: auto;
     padding: 0 20px;
     clear: both;
+    
     &:before, &:after {
-   	 content: " ";
-  	  display: table;
-	}
+        content: " ";
+        display: table;
+    }
 }
 h2 {
     font-size: 30px;
@@ -41,33 +42,32 @@ strong {
     margin-bottom: 31px;
 
     & p {
-    position: relative;
-    float: left;
-    margin: 0;
+        position: relative;
+        float: left;
+        margin: 0;
 
-    	& label {
-    margin-left: 50px;
-}
-		& i {
-    position: absolute;
-    top: 18px;
-    left: 15px;
-}
-		& input {
-			font: 400 18px/1em "Open Sans", "open-sans", sans-serif;
-    color: #8a959e;
-    background: #fff;
-    height: 63px;
-    width: 232px;
-    line-height: 1em;
-    border-radius: 3px;
-    padding: 18px 15px 18px 48px;
-    margin-right: 10px;
-    border: 1px solid #d4d7da;
-    outline: none;
-
-		}
-	}
+        & label {
+            margin-left: 50px;
+        }
+        & i {
+            position: absolute;
+            top: 18px;
+            left: 15px;
+        }
+        & input {
+            font: 400 18px/1em "Open Sans", "open-sans", sans-serif;
+            color: #8a959e;
+            background: #fff;
+            height: 63px;
+            width: 232px;
+            line-height: 1em;
+            border-radius: 3px;
+            padding: 18px 15px 18px 48px;
+            margin-right: 10px;
+            border: 1px solid #d4d7da;
+            outline: none;
+        }
+    }
 }
 form label {
     position: absolute;
@@ -84,9 +84,9 @@ p {
     color: #747c83;
 }
 .button button {
-	    margin: 0px;
-	    height: 62px;
-	    display: inline-block;
+    margin: 0px;
+    height: 62px;
+    display: inline-block;
     padding: 21px 40px 19px;
     background: #ff3366;
     border: 0;
@@ -98,19 +98,19 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     cursor: pointer;
-	    transition: background 0.3s;
+    transition: background 0.3s;
 
-	&:hover {
-		background: #f42156;
-	}
+    &:hover {
+        background: #f42156;
+    }
 }
 p.terms {
-        font-size: 12px;
-	
-	& a {
-		    color: #747c83;
-    text-decoration: underline;
-	}
+    font-size: 12px;
+
+    & a {
+        color: #747c83;
+        text-decoration: underline;
+    }
 }
 .ico-user {
     display: inline-block;
@@ -118,7 +118,7 @@ p.terms {
     height: 24px;
     width: 24px;
     background-image: url('https://www.invisionapp.com/assets/img/sprites-retina/global-s6dadb11278.png');
-        background-position: 0 -363.5px;
+    background-position: 0 -363.5px;
     background-repeat: no-repeat;
     background-size: 141px auto;
 }
@@ -130,7 +130,7 @@ p.terms {
     background-image: url('https://www.invisionapp.com/assets/img/sprites-retina/global-s6dadb11278.png');
     background-position: 0 -295.5px;
     background-repeat: no-repeat;
-        background-size: 141px auto;
+    background-size: 141px auto;
 }
 .ico-lock {
     display: inline-block;
@@ -138,7 +138,7 @@ p.terms {
     height: 24px;
     width: 24px;
     background-image: url('https://www.invisionapp.com/assets/img/sprites-retina/global-s6dadb11278.png');
-background-position: 0 -329.5px;
+    background-position: 0 -329.5px;
     background-repeat: no-repeat;
-        background-size: 141px auto;
+    background-size: 141px auto;
 }
