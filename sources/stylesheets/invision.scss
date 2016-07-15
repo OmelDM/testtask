@@ -110,6 +110,10 @@ p.terms {
     & a {
         color: #747c83;
         text-decoration: underline;
+
+        &:hover {
+            color: #fff;
+        }
     }
 }
 .ico-user {

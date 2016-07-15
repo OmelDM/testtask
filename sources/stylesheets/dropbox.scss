@@ -5,9 +5,9 @@ section.hero {
 	font-smoothing: antialiased;
 	-webkit-font-smoothing: antialiased;
 	font-size: 14px;
-    line-height: 26px;
+	line-height: 26px;
 
-    & *:after {
+	& *:after {
 		box-sizing: border-box;
 	}
 }
@@ -42,7 +42,7 @@ section.hero {
 		float: none;
 	}
 	.try-business-cta__button {
-    	display: inline-block;
+		display: inline-block;
 	}
 
 	.try-business-cta__footer {
@@ -114,17 +114,17 @@ section.hero {
 	background: none;
 }
 .try-business-cta__button {
-    min-width: 0;
-    min-height: 0;
-    margin: 0;
-    padding: 19px 26px;
-    font-size: 21px;
-    line-height: 21px;
-    background: #0071e0;
-    color: #fff;
-    display: block;
-    text-align: center;
-    border: none;
+	min-width: 0;
+	min-height: 0;
+	margin: 0;
+	padding: 19px 26px;
+	font-size: 21px;
+	line-height: 21px;
+	background: #0071e0;
+	color: #fff;
+	display: block;
+	text-align: center;
+	border: none;
 	border-radius: 6px;
 	font-weight: normal;
 	cursor: pointer;
@@ -135,18 +135,22 @@ section.hero {
 	}
 }
 .try-business-cta__footer {
-	    display: block;
-    margin-top: 15px;
-    font-size: 16px;
-    color: #47525d;
-    text-align: left;
-    margin-bottom: 0;
+	display: block;
+	margin-top: 15px;
+	font-size: 16px;
+	color: #47525d;
+	text-align: left;
+	margin-bottom: 0;
 
-    & a {
-    	 border-bottom: 1px solid #0071e0;
-    color: #0071e0;
-    text-decoration: none;
-    }
+	& a {
+		border-bottom: 1px solid #0071e0;
+		color: #0071e0;
+		text-decoration: none;
+
+		&:hover {
+			color: #3398ea;
+		}
+	}
 }
 @media (min-width: 400px) {
 	.hero__background-container {

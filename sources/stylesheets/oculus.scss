@@ -29,16 +29,16 @@
     position: relative;
     width: 100%;
 
-&:after, :before {
+    &:after, :before {
         content: " ";
-    display: block;
-    font-size: 0;
-    height: 0;
-    line-height: 0;
-    overflow: hidden;
-    visibility: hidden;
-    width: 0;
-}
+        display: block;
+        font-size: 0;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+        visibility: hidden;
+        width: 0;
+    }
     &:after {
         content: "";
         clear: both;
@@ -50,17 +50,17 @@
 }
 .proposal__link {
     display: block;
-        text-decoration: none;
-            color: #8d8e8f;
+    text-decoration: none;
+    color: #8d8e8f;
     transition: color 250ms;
 
     &:hover {
         color: #323436;
-    transition: none;
+        transition: none;
     }
 }
 .proposal__background {
-        background-position: center center;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 300px;
