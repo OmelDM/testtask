@@ -1,0 +1,103 @@
+.proposal {
+    list-style: none;
+    margin: 0;
+    max-width: none;
+    min-width: 0;
+    padding: 0;
+
+    &:after, :before {
+        content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+    &:after {
+        content: "";
+        clear: both;
+    }
+}
+.proposal__item {
+    display: list-item;
+    padding: 0;
+    background: #282828;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+
+&:after, :before {
+        content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+}
+    &:after {
+        content: "";
+        clear: both;
+    }
+    &:hover .proposal__background {
+            opacity: .8;
+    transform: scale(1.1, 1.1);
+    }
+}
+.proposal__link {
+    display: block;
+        text-decoration: none;
+            color: #8d8e8f;
+    transition: color 250ms;
+
+    &:hover {
+        color: #323436;
+    transition: none;
+    }
+}
+.proposal__background {
+        background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    opacity: .3;
+    text-align: center;
+    transition: transform .3s, opacity .3s;
+    width: 100%;
+}
+.proposal__text {
+    box-sizing: border-box;
+    padding: 0 32px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.proposal__discription {
+    color: #a4a5a6;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    line-height: 16px;
+    margin: 0;
+    text-align: center;
+}
+.proposal__title {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 28px;
+    margin: 0;
+    text-align: center;
+}
+@media screen and (min-width: 767px) {
+    .proposal__item {
+        float: left;
+        width: 33.33333333%;
+    }
+}
